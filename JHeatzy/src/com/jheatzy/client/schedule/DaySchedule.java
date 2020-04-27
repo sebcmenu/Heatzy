@@ -85,4 +85,8 @@ public class DaySchedule {
 		buf.append("]");
 		return buf.toString();
 	}
+
+	public DayOfWeek getDayOfWeek() {
+		return wDay;
+	}
 }

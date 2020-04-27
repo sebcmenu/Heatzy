@@ -7,7 +7,7 @@ public class Helper {
 	}
 
 	public static String getHourLabel(int ho,boolean ha) {
-		return String.format("%02d",ho)+(ha?":30":"00");
+		return String.format("%02d",ho)+(ha?":30":":00");
 	}
 
 }

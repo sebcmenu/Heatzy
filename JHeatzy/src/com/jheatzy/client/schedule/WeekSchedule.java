@@ -6,6 +6,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.json.JSONObject;
+
 import com.jheatzy.client.HeatingMode;
 
 public class WeekSchedule {
@@ -88,5 +90,10 @@ public class WeekSchedule {
 		WeekSchedule ws = new WeekSchedule();
 		ws.applySchedule(new WeeklyRange(new Range(HeatingMode.CONFORT, 8, false, 20, false), DayOfWeek.MONDAY,DayOfWeek.FRIDAY));
 		System.out.println(ws);
+		for (WeeklyRange wr : ws.getRangesFiltered(HeatingMode.ECO)) {
+			System.err.println(wr);
+		}
+			
+		
 	}
 }

@@ -96,7 +96,7 @@ public class Range {
 
 	@Override
 	public String toString() {
-		return ""+mode+Helper.getHourLabel(startH, halfS)+" - "+Helper.getHourLabel(endH, halfE);
+		return String.format("%-10s", mode)+Helper.getHourLabel(startH, halfS)+" - "+Helper.getHourLabel(endH, halfE);
 	}
 
 	
